@@ -1,9 +1,27 @@
-<h1>Login</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 mt-5">
+      <h1 class="text-center mb-4">Login</h1>
 
-<%= form_tag '/login' do %>
+      <%= form_tag '/login', class: 'needs-validation', novalidate: true do %>
+        <div class="mb-3">
+          <%= label_tag :email, 'Email', class: 'form-label' %>
+          <%= text_field_tag :email, nil, class: 'form-control', required: true %>
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
+        <div class="mb-3">
+          <%= label_tag :password, 'Password', class: 'form-label' %>
+          <%= password_field_tag :password, nil, class: 'form-control', required: true %>
+          <div class="invalid-feedback">
+            Please enter your password.
+          </div>
+        </div>
 
-<% end %>
+        <%= submit_tag "Submit", class: 'btn btn-primary btn-block' %>
+      <% end %>
+    </div>
+  </div>
+</div>
