@@ -2,10 +2,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-      <p class="bg-info text-white p-3">Total Products: <%= @num_of_products %></p>
+    <p>
+    <%= link_to admin_products_path, class: 'btn btn-lg btn-info text-white text-decoration-none d-block w-100 p-3' do %>
+      Total Products: <%= @num_of_products %>
+    <% end %>
+    </p>
     </div>
     <div class="col-md-6">
-      <p class="bg-success text-white p-3">Total Categories: <%= @num_of_categories %></p>
+      <p class="bg-success text-white text-center p-3">Total Categories: <%= @num_of_categories %></p>
     </div>
   </div>
 </div>
