@@ -5,8 +5,9 @@
   </header>
 
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
-    <p><strong> A receipt has been sent to the email on file <%= @order.email %> </strong></p>
+    <h3 class="text-success">Thank you for your order!</h3>
+    <h5> A receipt has been sent to the email on file: <%= @order.email %> </h5>
+    <br/>
 
     <table class="table table-bordered"> 
       <thead>
