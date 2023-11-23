@@ -6,6 +6,7 @@ A mini e-commerce application built with Rails 6.1 for purposes of learning Rail
 
 Checking out with sign in:
 !["Jungle Home Screen and Anonymous Checkout Flow"](https://github.com/Wilson-Chu/jungle/blob/master/docs/home_journey_720p.mp4?raw=true)
+[home_journey_1080p.webm](https://github.com/Wilson-Chu/jungle/assets/29493449/ad87a5f0-8a29-4c7c-811f-b9fccc3d6d72)
 
 Signing up new user and navigating Admin Dashboard:
 !["Admin Dashboard Demo and Logged-in Checkout Flow"]()
