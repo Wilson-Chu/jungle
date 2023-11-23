@@ -1,25 +1,39 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1 for purposes of learning Rails by example.
 
 ## Setup
 
-1. Run `bundle install` to install dependencies
-2. Create `config/database.yml` by copying `config/database.example.yml`
-3. Create `config/secrets.yml` by copying `config/secrets.example.yml`
-4. Run `bin/rails db:reset` to create, load and seed db
-5. Create .env file based on .env.example
-6. Sign up for a Stripe account
-7. Put Stripe (test) keys into appropriate .env vars
-8. Run `bin/rails s -b 0.0.0.0` to start the server
+1. If using SSH:
+```
+git clone git@github.com:Wilson-Chu/jungle.git
+```
+2. From home directory:
+```
+cd jungle
+```
+3. Run `bundle install` to install dependencies
+4. Run `bin/rails db:reset` to create, load and seed db 
 
-## Database
+- You may have to start up your PostgreSQL system, from the terminal:
+```
+$ startpostgres
+=> Enter password (if applicable)
 
-If Rails is complaining about authentication to the database, uncomment the user and password fields from `config/database.yml` in the development and test sections, and replace if necessary the user and password `development` to an existing database user.
+$ psql jungle_development
+=> Enter password (if applicable)
+```
+
+5. Run `bin/rails s -b 0.0.0.0` to start the server
+
+The website will be hosted on http://localhost:3000 by default.
+
 
 ## Stripe Testing
 
-Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
+Use Credit Card # 4111 1111 1111 1111 for testing success scenarios. 
+
+Expiry date can be the current month or anytime in the future. CVV can be anything for testing.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
