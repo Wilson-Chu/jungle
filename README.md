@@ -1,6 +1,8 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of learning Rails by example. An online store selling flowers, bushes, trees, and anything else. Stripe payments and user authentication are featured.
+A mini e-commerce application built with Rails 6.1 for purposes of learning Rails by example. An online store selling flowers, bushes, trees, and anything else. Stripe payments and user authentication are featured. 
+
+The user can add new items to be sold, and can change the categories that each item is labelled under by logging in.
 
 ## Demo
 
